@@ -1,0 +1,134 @@
+@import 'src/mixins';
+
+.footer {
+  margin-top: 38px;
+  border-top: 4px solid $color-main-effect;
+
+  @include tablet {
+    margin-top: 100px;
+  }
+
+  @include desktop {
+    margin-top: 100px;
+  }
+
+  &__logo {
+    @extend %font-foot-logo;
+    margin: 16px 0 14px;
+    color: $color-main-effect;
+    letter-spacing: 1px;
+    text-align: center;
+
+    @include tablet {
+      display: inline-block;
+      margin: 35px 92px 0 8px;
+    }
+
+    @include desktop {
+      display: inline-block;
+      margin: 35px 92px 0 8px;
+    }
+  }
+
+}
+
+.footer-menu {
+  @include tablet {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  &__item {
+    display: inline-block;
+    margin: 0 5px;
+
+    @include tablet {
+      display: block;
+      margin: 1px 0;
+      text-align: left;
+    }
+
+    @include desktop {
+      display: block;
+      margin: 1px 0;
+      text-align: left;
+    }
+  }
+
+  &__section {
+    @extend %font-foot-menu-section;
+    margin: 10px;
+    color: $color-main-dark;
+    text-align: center;
+
+    @include tablet {
+      display: inline-block;
+      margin: 37px 88px 37px 0;
+      vertical-align: top;
+    }
+
+    @include desktop {
+      display: inline-block;
+      margin: 37px 88px 37px 0;
+      vertical-align: top;
+    }
+
+    ul {
+      margin-top: 10px;
+    }
+  }
+
+  &__link {
+    @extend %font-foot-menu-link;
+    color: $color-menu-halftone;
+    text-align: center;
+
+    &:hover {
+      color: $color-main-effect;
+    }
+  }
+}
+
+.designed {
+  @extend %font-foot-designed;
+  width: 110px;
+  margin: 9px auto 18px;
+  color: $color-main-halftone;
+  line-height: 2;
+  text-align: center;
+
+  @include tablet {
+    display: inline-block;
+    margin: 31px 10px;
+    float: right;
+    vertical-align: top;
+  }
+
+  @include desktop {
+    display: inline-block;
+    margin: 31px 10px;
+    float: right;
+    vertical-align: top;
+  }
+
+  span {
+    line-height: 2;
+    text-transform: uppercase;
+
+    @include tablet {
+      float: right;
+      line-height: 2.2;
+    }
+
+    @include desktop {
+      float: right;
+      line-height: 2.2;
+    }
+  }
+
+}

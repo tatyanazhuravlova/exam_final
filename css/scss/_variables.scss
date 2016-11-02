@@ -1,0 +1,52 @@
+@import 'src/mixins';
+
+$color-main-light: #fff;
+$color-main-dark: #333;
+$color-main-halftone: #ccc;
+$color-menu-halftone: #666;
+$color-main-effect: #ff4e50;
+$color-placeholder: #999;
+
+// @mixin font($weight, $style, $size, $height, $family)
+// scss-lint:disable SpaceAroundOperator
+%font-logo { @include font(bold, normal, 21.5px, 1.2, 'montserrat'); }
+%font-main-title-mobile { @include font(bold, normal, 30px, 1.2, 'montserrat'); }
+$font-main-title-tablet-size: 52px;
+%font-second-title { @include font(bold, normal, 22px, 1.2, 'montserrat'); }
+%font-subtitle-mobile { @include font(normal, normal, 18px, 1.2, 'robotothin'); }
+$font-subtitle-tablet-size: 25px;
+
+%font-button { @include font(bold, normal, 14px, 1.2, 'montserrat'); }
+
+%font-carousel-badge { @include font(normal, normal, 10px, 1.2, 'montserrat'); }
+%font-carousel-title { @include font(bold, normal, 24px, 1.2, 'montserrat'); }
+%font-carousel-text { @include font(normal, normal, 14px, 1.2, 'robotolight'); }
+
+%font-partner-title { @include font(bold, normal, 14px, 1.2, 'montserrat'); }
+%font-partner-text { @include font(normal, normal, 14px, 1.2, 'robotolight'); }
+
+%font-grid-item-title { @include font(bold, normal, 22px, 1.2, 'montserrat'); }
+
+%font-question { @include font(bold, normal, 18px, 1.2, 'robotolight'); }
+%font-input { @include font(normal, normal, 14px, 1.2, 'robotolight'); }
+$font-placeholder: normal 14px/1.2 'robotolight';
+
+%font-foot-logo { @include font(bold, normal, 16px, 1.2, 'montserrat'); }
+%font-foot-menu-section { @include font(bold, normal, 14px, 1.2, 'montserrat'); }
+%font-foot-menu-link { @include font(normal, normal, 14px, 1.71, 'robotolight'); }
+%font-foot-designed { @include font(bold, normal, 11px, 1.71, 'montserrat'); }
+// scss-lint:enable all
+
+$border-button-light: 2px solid $color-main-light;
+$border-button-effect: 2px solid $color-main-effect;
+
+// scss-lint:disable ColorVariable
+$icon-partner-tv: #ff4e50 url('../img/sprite.view.svg') no-repeat;
+$icon-partner-chem: #ffa505 url('../img/sprite.view.svg') no-repeat;
+$icon-partner-coffie: #20d7ad url('../img/sprite.view.svg') no-repeat;
+$icon-partner-plane: #4d73db url('../img/sprite.view.svg') no-repeat;
+// scss-lint:enable all
+
+// media-quaries
+$tablet-width: 768px;
+$desktop-width: 1024px;

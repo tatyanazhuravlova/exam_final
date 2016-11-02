@@ -1,0 +1,20 @@
+@import 'modules/buttons';
+@import 'modules/header';
+@import 'modules/content';
+@import 'modules/carousel';
+@import 'modules/partners';
+@import 'modules/searchbox';
+@import 'modules/footer';
+@import 'modules/grid';
+
+// content
+content {
+  text-align: center;
+}
+
+h2 {
+  @extend %font-second-title;
+  margin: 5px 0;
+  color: $color-main-dark;
+  text-align: center;
+}

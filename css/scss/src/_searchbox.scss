@@ -1,0 +1,52 @@
+@import 'src/mixins';
+
+.search-question {
+  @extend %font-question;
+  color: $color-main-dark;
+  text-align: center;
+}
+
+.search-block {
+  @include tablet {
+    width: 412px;
+    margin: 39px auto 0;
+  }
+
+  @include desktop {
+    width: 412px;
+    margin: 39px auto 0;
+  }
+
+  &__input {
+    @extend %font-input;
+    display: block;
+    width: 257px;
+    height: 38px;
+    margin: 17px auto 9px;
+    padding: 0 14px;
+    border: 1px solid $color-main-halftone;
+    border-radius: 3px;
+    outline: none;
+    line-height: 32px;
+
+
+    @include tablet {
+      display: inline-block;
+      width: 210px;
+      margin: 0 4px 0 0;
+    }
+
+    @include desktop {
+      display: inline-block;
+      width: 210px;
+      margin: 0 4px 0 0;
+    }
+
+    /* scss-lint:disable all */
+    &::-webkit-input-placeholder { font: $font-placeholder; }
+    &::-moz-placeholder          { font: $font-placeholder; } /* Firefox 19+ */
+    &:-moz-placeholder           { font: $font-placeholder; } /* Firefox 18- */
+    &:-ms-input-placeholder      { font: $font-placeholder; }
+    /* scss-lint:enable all */
+  }
+}

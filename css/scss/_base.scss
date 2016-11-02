@@ -1,0 +1,32 @@
+@import 'src/reset';
+@import 'src/fonts';
+@import 'src/mixins';
+
+a {
+  text-decoration: none;
+}
+
+body,
+input,
+button,
+textaria {
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/*
+body {
+  background: url('../img/refMobile.png') top center no-repeat;
+  opacity: .5;
+
+  @include tablet {
+    background: url('../img/refTablet.png') top center no-repeat;
+    opacity: .5;
+  }
+
+  @include desktop {
+    background: url('../img/refDesktop.png') top center  no-repeat;
+    opacity: .5;
+  }
+}*/

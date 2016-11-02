@@ -1,0 +1,98 @@
+@import 'src/mixins';
+
+.partner {
+  margin-bottom: 10px;
+  padding: 0 50px;
+  text-align: center;
+
+  @include tablet {
+    margin-bottom: 48px;
+    padding: 0 50px;
+  }
+
+  @include desktop {
+    margin-bottom: 17px;
+    padding: 0;
+  }
+
+  &__avatar {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border: 5px solid $color-main-light;
+
+    &::after {
+      position: absolute;
+      right: -2px;
+      bottom: -8px;
+      width: 32px;
+      height: 32px;
+      border: 4px solid $color-main-light;
+      border-radius: 50%;
+      background: $color-main-effect;
+      content: ' ';
+    }
+  }
+
+  &__item {
+    display: inline-block;
+    width: 240px;
+    vertical-align: top;
+
+    @include tablet {
+      width: 240px;
+    }
+
+    @include desktop {
+      width: 235px;
+    }
+  }
+
+  &__img {
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  &__title {
+    @extend %font-partner-text;
+    margin: 15px 0;
+    color: $color-main-dark;
+    text-align: center;
+  }
+
+  &__text {
+    @extend %font-partner-text;
+    margin: 12px 50px 20px;
+    color: $color-main-dark;
+    text-align: center;
+
+    @include tablet {
+      margin: 12px 10px 20px;
+    }
+
+    @include desktop {
+      margin: 12px 10px 20px;
+    }
+  }
+}
+
+.partner__item:nth-child(1) .partner__avatar::after {
+  background: $icon-partner-tv;
+  background-position: 97.8% 5%;
+}
+
+.partner__item:nth-child(2) .partner__avatar::after {
+  background: $icon-partner-chem;
+  background-position: 73.5% 4%;
+}
+
+.partner__item:nth-child(3) .partner__avatar::after {
+  background: $icon-partner-coffie;
+  background-position: 1.5% 100%;
+}
+
+.partner__item:nth-child(4) .partner__avatar::after {
+  background: $icon-partner-plane;
+  background-position: 29.5% 96%;
+}

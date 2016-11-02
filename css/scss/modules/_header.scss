@@ -1,0 +1,123 @@
+@import 'src/mixins';
+
+.header {
+  position: relative;
+  max-width: 1440px;
+  height: 540px;
+  margin: 0 auto 35px;
+  // scss-lint:disable ColorVariable
+  background: #1a1915 url('../img/top-bg.png') center top no-repeat;
+  // scss-lint:enable all
+  background-size: cover;
+  text-align: center;
+
+  @include tablet {
+    height: 700px;
+  }
+
+  @include desktop {
+    height: 700px;
+  }
+}
+
+.header__wrapper {
+  position: relative;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 23px 0 0;
+
+  @include tablet {
+    width: 768px;
+  }
+
+  @include desktop {
+    width: 960px;
+  }
+}
+
+.header__logo {
+  @extend %font-logo;
+  position: absolute;
+  top: 171px;
+  width: 100%;
+  color: $color-main-light;
+  text-align: center;
+
+  @include tablet {
+    top: 47px;
+    left: 48px;
+    width: 200px;
+    text-align: left;
+  }
+
+  @include desktop {
+    top: 47px;
+    left: 10px;
+    width: 200px;
+    text-align: left;
+  }
+}
+
+.header__title {
+  @extend %font-main-title-mobile;
+  @include clearfix;
+  margin: 200px 0 0;
+  clear: both;
+  color: $color-main-light;
+  text-transform: uppercase;
+
+  @include tablet {
+    margin: 194px 0 0;
+    font-size: $font-main-title-tablet-size;
+  }
+
+  @include desktop {
+    margin: 194px 70px 0;
+    font-size: $font-main-title-tablet-size;
+  }
+}
+
+.header__subtitle {
+  @extend %font-subtitle-mobile;
+  margin: 9px 20px 16px;
+  color: $color-main-light;
+
+  @include tablet {
+    margin: 22px 20px 33px;
+    font-size: $font-subtitle-tablet-size;
+  }
+
+  @include desktop {
+    margin: 22px 20px 33px;
+    font-size: $font-subtitle-tablet-size;
+  }
+}
+
+.autorize {
+  position: relative;
+  width: 178px;
+  margin: 6px auto;
+
+  @include tablet {
+    margin: 25px 49px;
+    float: right;
+  }
+
+  @include desktop {
+    margin: 25px 10px;
+    float: right;
+  }
+
+  &__item {
+    position: absolute;
+    width: 92px;
+  }
+}
+
+.autorize__item--login {
+  left: 0;
+}
+
+.autorize__item--signup {
+  right: 0;
+}

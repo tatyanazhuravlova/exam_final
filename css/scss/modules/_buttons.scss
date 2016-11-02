@@ -1,0 +1,120 @@
+@import 'variables';
+
+.autorize {
+  &__login {
+    @extend %font-button;
+    padding: 8px 15px;
+    color: $color-main-light;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      border: $border-button-light;
+      border-radius: 20px;
+    }
+  }
+
+  &__signup {
+    @extend %font-button;
+    padding: 8px 15px;
+    color: $color-main-light;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      border: $border-button-light;
+      border-radius: 20px;
+    }
+  }
+}
+
+.header__btn {
+  @extend %font-button;
+  display: inline-block;
+  width: 276px;
+  border: $border-button-effect;
+  border-radius: 19px;
+  background: $color-main-effect;
+  color: $color-main-light;
+  line-height: 36px;
+  text-align: center;
+  cursor: pointer;
+
+  @include tablet {
+    width: 222px;
+  }
+
+  @include desktop {
+    width: 222px;
+  }
+
+  &:hover {
+    border: $border-button-effect;
+    background: $color-main-light;
+    color: $color-main-effect;
+  }
+}
+
+.partner__btn {
+  @extend %font-button;
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  border: $border-button-effect;
+  border-radius: 19px;
+  color: $color-main-effect;
+  background: $color-main-light;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  behavior: url(border-radius.htc);
+
+  @include tablet {
+    width: 188px;
+  }
+
+  @include desktop {
+    width: 188px;
+  }
+
+  &:hover {
+    background: $color-main-effect;
+    color: $color-main-light;
+  }
+}
+
+.search-block__btn {
+  @extend %font-button;
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  border: $border-button-effect;
+  border-radius: 22px;
+  outline: none;
+  background: $color-main-effect;
+  color: $color-main-light;
+  line-height: 32px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  behavior: url(border-radius.htc);
+
+  @include tablet {
+    display: inline-block;
+    width: 164px;
+  }
+
+  @include desktop {
+    display: inline-block;
+    width: 164px;
+  }
+
+  &:hover {
+    border: $border-button-effect;
+    background: $color-main-light;
+    color: $color-main-effect;
+  }
+}

@@ -1,0 +1,64 @@
+%svg-common {
+	background: url("svg/sprite.view.svg") no-repeat;
+}
+
+.svg-icon-arrow-left {
+	@extend %svg-common;
+	background-position: 0 0;
+}
+
+.svg-icon-arrow-left-dims {
+	width: 50px;
+	height: 75px;
+}
+
+.svg-icon-arrow-right {
+	@extend %svg-common;
+	background-position: 42.3728813559322% 0;
+}
+
+.svg-icon-arrow-right-dims {
+	width: 50px;
+	height: 75px;
+}
+
+.svg-icon-chemistry {
+	@extend %svg-common;
+	background-position: 73.34604664808566% 0;
+}
+
+.svg-icon-chemistry-dims {
+	width: 31.66px;
+	height: 36px;
+}
+
+.svg-icon-coffee {
+	@extend %svg-common;
+	background-position: 0 99.53550099535502%;
+}
+
+.svg-icon-coffee-dims {
+	width: 36px;
+	height: 35.65px;
+}
+
+.svg-icon-plane {
+	@extend %svg-common;
+	background-position: 27.272727272727273% 98.6842105263158%;
+}
+
+.svg-icon-plane-dims {
+	width: 36px;
+	height: 35px;
+}
+
+.svg-icon-tvset {
+	@extend %svg-common;
+	background-position: 99.74242424242425% 0;
+}
+
+.svg-icon-tvset-dims {
+	width: 36px;
+	height: 36px;
+}
+

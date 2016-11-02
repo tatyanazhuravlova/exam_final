@@ -1,0 +1,51 @@
+// @import '../variables';
+
+@mixin clearfix {
+  &::after {
+    display: table;
+    clear: both;
+    content: '';
+  }
+}
+
+@mixin reset-btn() {
+  border: none;
+  background: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+// fonts
+@mixin font ($weight, $style, $size, $height, $family) {
+  font-family: $family;
+  font-size: $size;
+  font-style: $style;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+@mixin set-font-plus-tac($color, $font) {
+  color: $color;
+  text-align: center;
+}
+
+@mixin set-font-plus-tal($color, $font) {
+  color: $color;
+  font: $font;
+  text-align: left;
+}
+
+// media-quaries
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

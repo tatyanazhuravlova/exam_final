@@ -1,0 +1,26 @@
+
+scss_files: 'css/**/*.css.scss'
+
+exclude: 'css/src/*.css.scss'
+
+linters:
+  BorderZero:
+    enabled: false
+
+  PropertySortOrder:
+    enabled: true
+    ignore_unspecified: true
+    min_properties: 2
+    separate_groups: true
+    order: smacss
+
+  SelectorFormat:
+    enabled: true
+    convention: 'strict_BEM' # or 'strict_BEM', or 'hyphenated_BEM', or 'snake_case', or 'camel_case', or a regex pattern
+
+  Indentation:
+    exclude:
+      - 'path/to/file.scss'
+      - 'path/to/directory/**'
+    severity: warning
+    width: 2

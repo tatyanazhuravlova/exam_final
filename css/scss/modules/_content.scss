@@ -1,0 +1,68 @@
+@import 'src/mixins';
+
+.content {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  text-align: justify;
+
+  @include tablet {
+    width: 768px;
+  }
+
+  @include desktop {
+    width: 960px;
+    text-align: justify;
+  }
+
+  &__title {
+    &--carousel {
+      margin: 35px 0 14px;
+
+      @include tablet {
+        margin: 95px 0 24px;
+      }
+
+      @include desktop {
+        margin: 95px 0 24px;
+      }
+    }
+
+    &--partners {
+      margin: 35px 0 9px;
+
+      @include tablet {
+        margin: 94px 0 26px;
+      }
+
+      @include desktop {
+        margin: 94px 0 26px;
+      }
+    }
+
+    &--grid {
+      margin: 35px 0 4px;
+
+      @include tablet {
+        margin: 97px 0 14px;
+      }
+
+      @include desktop {
+        margin: 97px 0 14px;
+      }
+    }
+
+    &--search {
+      margin: 35px 0 12px;
+
+      @include tablet {
+        margin: 107px 0 24px;
+      }
+
+      @include desktop {
+        margin: 95px 0 31px;
+      }
+    }
+
+  }
+}
